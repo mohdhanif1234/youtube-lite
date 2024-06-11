@@ -32,6 +32,9 @@ const apiSlice = createSlice({
     reducers: {
         setMobileMenu: (state, action) => {
             state.mobileMenu = action.payload
+        },
+        setSelectedCategory: (state, action) => {
+            state.selectCategories = action.payload
         }
     },
     extraReducers: (builder) => {
@@ -51,6 +54,6 @@ const apiSlice = createSlice({
     }
 })
 
-export const { setMobileMenu } = apiSlice.actions
+export const { setMobileMenu, setSelectedCategory } = apiSlice.actions
 
 export default apiSlice.reducer;

@@ -19,12 +19,7 @@ export const categories = [
     { name: "News", icon: <ImNewspaper />, type: "category" },
     { name: "Sports", icon: <GiDiamondTrophy />, type: "category" },
     { name: "Learning", icon: <RiLightbulbLine />, type: "category" },
-    {
-        name: "Fashion & beauty",
-        icon: <GiEclipse />,
-        type: "category",
-        divider: true,
-    },
+    { name: "Fashion & beauty", icon: <GiEclipse />, type: "category", divider: true, },
     { name: "Settings", icon: <FiSettings />, type: "menu" },
     { name: "Report History", icon: <AiOutlineFlag />, type: "menu" },
     { name: "Help", icon: <FiHelpCircle />, type: "menu" },

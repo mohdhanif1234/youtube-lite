@@ -11,6 +11,7 @@ import VideoDetails from './components/VideoDetails'
 const App = () => {
 
   const selectCategories = useSelector(state => state.api.selectCategories)
+  console.log(selectCategories)
   let data = useSelector(state => state.api.data)
 
   const dispatch = useDispatch();
@@ -23,9 +24,9 @@ const App = () => {
   }
 
   useEffect(() => {
-    if (data.length === 0) {
+    // if (data.length === 0) {
       fetchSelectedCategoryData(selectCategories)
-    }
+    // }
   }, [selectCategories])
 
   return (
