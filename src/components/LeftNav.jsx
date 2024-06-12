@@ -8,6 +8,8 @@ import { categories } from '../utils/constants'
 const LeftNav = () => {
   const selectCategories = useSelector(state => state.api.selectCategories);
 
+  console.log(selectCategories)
+
   const dispatch = useDispatch()
 
   const navigate = useNavigate();
@@ -33,7 +35,7 @@ const LeftNav = () => {
           {
             categories.map((item, idx) => {
               return (
-                <div key={idx}>
+                <div key={item.name}>
                   <LeftNavMenuItem
                     text={item.type === 'home' ? 'Home' : item.name}
                     icon={item.icon}
